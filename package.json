@@ -1,3 +1,4 @@
+
 {
   "name": "nextn",
   "version": "0.1.0",
@@ -12,6 +13,7 @@
     "typecheck": "tsc --noEmit"
   },
   "dependencies": {
+    "@aptos-labs/wallet-adapter-react": "^3.7.0",
     "@genkit-ai/google-genai": "^1.28.0",
     "@hookform/resolvers": "^4.1.3",
     "@radix-ui/react-accordion": "^1.2.3",
@@ -35,16 +37,19 @@
     "@radix-ui/react-tabs": "^1.1.3",
     "@radix-ui/react-toast": "^1.2.6",
     "@radix-ui/react-tooltip": "^1.1.8",
+    "aptos": "^1.21.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
     "dotenv": "^16.5.0",
     "embla-carousel-react": "^8.6.0",
     "firebase": "^11.9.1",
+    "framer-motion": "^11.0.0",
     "genkit": "^1.28.0",
     "lucide-react": "^0.475.0",
-    "next": "^15.3.6",
+    "next": "15.5.9",
     "patch-package": "^8.0.0",
+    "petra-plugin-wallet-adapter": "^0.4.5",
     "react": "^19.2.1",
     "react-day-picker": "^9.11.3",
     "react-dom": "^19.2.1",
@@ -62,5 +67,15 @@
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
+  },
+  "overrides": {
+    "@aptos-labs/wallet-adapter-react": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    },
+    "petra-plugin-wallet-adapter": {
+      "react": "$react",
+      "react-dom": "$react-dom"
+    }
   }
 }

@@ -1,3 +1,10 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "ghostdrop",
+      "description": "Dark digital vault interface preview",
+      "imageUrl": "https://picsum.photos/seed/ghostdrop/1200/600",
+      "imageHint": "dark digital interface"
+    }
+  ]
 }
